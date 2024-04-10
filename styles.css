@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Outfit", sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url(/images/cww-todo-photo.avif) no-repeat;
+  background-size: 100% 100%;
+}
+.container h1{
+   margin: 10px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+form{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.todo-list .todo-list span{
+  display: block;
+  flex-direction: column;
+}
+
+.todo-fields{
+  width: 35rem;
+}
+
+label{
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #110502;
+  padding: 10px;
+}
+
+input{
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+button[type="submit"]{
+  background: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: none;
+  background: rgb(0, 170, 0);
+  color: aliceblue;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all;
+}
+
+button[type="submit"]:hover{
+  background: rgb(0, 108, 0);
+}
+
+.todo-tas{
+  background: gray;
+}
+
+
+.todo-list{
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  width: 35rem;
+
+}
