@@ -75,11 +75,6 @@ button[type="submit"]:hover{
   background: rgb(0, 108, 0);
 }
 
-.todo-tas{
-  background: gray;
-}
-
-
 .todo-list{
   display: flex;
   padding: 20px;
@@ -87,3 +82,9 @@ button[type="submit"]:hover{
   width: 35rem;
 
 }
+
+.todo-task{
+  background: rgb(254, 81, 81);
+  padding: 10px;
+}
+
