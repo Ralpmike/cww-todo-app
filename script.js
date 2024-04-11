@@ -78,7 +78,7 @@ function todoAppList() {
   })
  
 }
-todoAppList()
+
 
 const deleteTodo = (todoIndex) => {
   todoList = todoList.filter((_, index) => {
@@ -87,6 +87,7 @@ const deleteTodo = (todoIndex) => {
   todoAppList()
   todoStorage()
 }
+
 
 
 const editTodo = (editedIndex) => {
@@ -121,3 +122,7 @@ const completeTodo = (todoIndex) => {
 function todoStorage() {
   localStorage.setItem("todoList", JSON.stringify(todoList))
 }
+
+(()=>{
+  todoAppList()
+})();
