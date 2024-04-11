@@ -57,10 +57,12 @@ function todoAppList() {
   todoList.map((todo, index) => {
     return (
       todoListContainer.innerHTML += `
-<div class="todo-task" id=${index} style="text-decoration: ${todo.isCompleted ? 'line-through' : 'none'}">
+<div class="todo-task" id=${index}">
+    <div class="input-values" style="text-decoration: ${todo.isCompleted ? 'line-through' : 'none'};">
     <h4 class="task">Task: ${todo.todo}</h4>
     <h4 class="todo-date">Date: ${todo.datevalue}</h4>
     <h4 class="todo-time">Time: ${todo.timevalue}</h4>
+    </div>
   <div class="todo-action">
       <button class="delete-btn" onclick="deleteTodo(${index})">
         Delete

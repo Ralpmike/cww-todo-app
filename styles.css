@@ -80,7 +80,7 @@ button[type="submit"]:hover {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border: solid 1px #110502;
+  
   margin: 20px 0;
   justify-content: column;
   width: 35rem;
@@ -89,14 +89,25 @@ button[type="submit"]:hover {
 .todo-task {
   backdrop-filter: blur(10px);
   display: flex;
+  border: solid 1px #110502;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   padding: 10px;
 }
-
+.todo-task .input-values {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.todo-action{
+  display: flex;
+  gap: 10px;
+}
 .todo-action button {
   font-size: 16px;
-  margin-top: 20px;
+  padding: 10px 18px;
+  border-radius: 4px;
+  margin: 6px 0;
 }
 
 .delete-btn,
@@ -105,7 +116,7 @@ button[type="submit"]:hover {
   /* color: ; */
   background: red;
   border: none;
-  padding: 5px;
+  padding: 8px;
   color: white;
   cursor: pointer;
 }
