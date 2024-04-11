@@ -76,27 +76,7 @@ function todoAppList() {
 `
     )
   })
-  // todoList.forEach((todo) => {
-  //   const todoTask = document.createElement("div") //todo-task
-  //  todoTask.setAttribute("class","todo-task")
-
-  //   const task = document.createElement("span") //task
-  //   task.classList.add("task")
-  //   task.innerText = todo.todo
-
-  //   const date = document.createElement("span") //date
-  //   date.classList.add("todo-date")
-  //   date.innerText = todo.datevalue
-
-  //   const time = document.createElement("span") //time
-  //   time.classList.add("todo-time")
-  //   time.innerText = todo.timevalue
-
-  //   todoTask.append(task, date, time)
-
-  //   todoListContainer.appendChild(todoTask)
-
-  // })
+ 
 }
 todoAppList()
 
@@ -110,7 +90,6 @@ const deleteTodo = (todoIndex) => {
 
 
 const editTodo = (editedIndex) => {
-  // debugger
   todo.value = todoList[editedIndex].todo
   date.value = todoList[editedIndex].datevalue
   time.value = todoList[editedIndex].timevalue

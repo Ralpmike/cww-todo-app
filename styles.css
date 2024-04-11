@@ -15,14 +15,13 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: url("/images/cww-todo-photo.avif") no-repeat;
+  background: url("./images/cww-todo-photo.avif") no-repeat;
   background-size: 100% 100%;
 }
 .container h1 {
   margin: 10px 0;
   color: #110502;
   backdrop-filter: blur(10px);
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
   padding: 10px;
 }
 
@@ -88,7 +87,6 @@ button[type="submit"]:hover {
 }
 
 .todo-task {
-  /* background: #ad7d02; */
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
@@ -126,7 +124,6 @@ button[type="submit"]:hover {
 }
 
 h4 {
-  /* color: white; */
   font-size: 22px;
 }
 
