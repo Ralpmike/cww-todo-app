@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   justify-content: center;
   min-height: 100vh;
   background: url("./images/cww-todo-photo.avif") no-repeat;
@@ -139,6 +140,7 @@ h4 {
 }
 
 @media only screen and (max-width: 720px) {
+  .input-values,
   .todo-fields,
   .todo-task,
   .todo-list {
