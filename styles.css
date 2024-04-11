@@ -1,7 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
-*{
+* {
   padding: 0;
   margin: 0;
   outline: none;
@@ -10,7 +9,7 @@
   font-family: "Outfit", sans-serif;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,30 +18,33 @@
   background: url(/images/cww-todo-photo.avif) no-repeat;
   background-size: 100% 100%;
 }
-.container h1{
-   margin: 10px 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.container h1 {
+  margin: 10px 0;
+  color: #110502;
+  backdrop-filter: blur(10px);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
   padding: 10px;
 }
 
-form{
+form {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 15px; 
+  padding: 15px;
+  backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.todo-list .todo-list span{
+.todo-list .todo-list span {
   display: block;
   flex-direction: column;
 }
 
-.todo-fields{
+.todo-fields {
   width: 35rem;
 }
 
-label{
+label {
   display: block;
   margin-bottom: 5px;
   font-size: 18px;
@@ -50,7 +52,7 @@ label{
   padding: 10px;
 }
 
-input{
+input {
   width: 100%;
   padding: 10px 5px;
   font-size: 18px;
@@ -58,7 +60,7 @@ input{
   border: none;
 }
 
-button[type="submit"]{
+button[type="submit"] {
   background: transparent;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border: none;
@@ -71,20 +73,72 @@ button[type="submit"]{
   transition: all;
 }
 
-button[type="submit"]:hover{
+button[type="submit"]:hover {
   background: rgb(0, 108, 0);
 }
 
-.todo-list{
+.todo-list {
   display: flex;
-  padding: 20px;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+  border: solid 1px #110502;
+  margin: 20px 0;
+  justify-content: column;
   width: 35rem;
-
 }
 
-.todo-task{
-  background: rgb(254, 81, 81);
+.todo-task {
+  /* background: #ad7d02; */
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   padding: 10px;
 }
 
+.todo-action button {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.delete-btn,
+.edit-btn,
+.complete-btn {
+  /* color: ; */
+  background: red;
+  border: none;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-btn:hover,
+.edit-btn:hover,
+.complete-btn:hover {
+  opacity: 0.7;
+}
+
+.edit-btn {
+  background: #110502;
+}
+.complete-btn {
+  background: green;
+}
+
+h4 {
+  /* color: white; */
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 720px) {
+  .todo-fields,
+  .todo-task,
+  .todo-list {
+    width: 100%;
+  }
+
+  .container {
+    background-size: 100% 100%;
+    padding: 10px;
+  }
+}
